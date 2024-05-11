@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="text/javascript"
+      src="/Squad/Day2/JavaScript/LoginValidation.js"
+    ></script>
+  </head>
+  <body>
+    <div class="login">
+      <form action="">
+        <h1>Log In</h1>
+        <label> Username </label>
+        <input
+          class="input1"
+          type="text"
+          id="username"
+          placeholder="username"
+        />
+        <span id="usererror" class="error"><b></b></span>
+        <label> Password </label>
+        <input
+          class="input1"
+          type="password"
+          id="pass"
+          placeholder="password"
+        />
+        <span id="passerror" class="error"><b></b></span>
+        <label id="showpass" class="show" onclick="showpass()">Show Password</label>
+        <button type="submit" onclick="return validateLogin()">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
