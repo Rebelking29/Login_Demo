@@ -2,7 +2,7 @@
     border: 1px solid black;
     width: 400px;
     height: 500px;
-    background-image: url("/Squad/Day2/pics/bg2.jpg");
+    background-image: url("bg2.jpg");
     color: whitesmoke;
     border-radius: 20px;
     box-shadow: 0px opx 20px rgba(0, 0, 0, 0.75);
