@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+D:\Project Ripo\Login\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+100036210.index
