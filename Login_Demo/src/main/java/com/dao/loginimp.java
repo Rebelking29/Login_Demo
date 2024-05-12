@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import com.pojo.Login;
 import com.util.DBConnection;
 
-public class loginimp {
+public class Loginimp {
 	
 	Connection con;
 	PreparedStatement ps;
