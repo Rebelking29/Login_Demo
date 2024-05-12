@@ -16,7 +16,6 @@ function validateLogin() {
     return false;
   } else {
     document.getElementById("passerror").innerText = "";
-    let user = document.getElementById("username").value;
     return true;
   }
 }
