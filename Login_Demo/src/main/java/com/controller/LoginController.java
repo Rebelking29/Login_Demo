@@ -31,10 +31,14 @@ public class LoginController extends HttpServlet {
 			if(log != null) {
 					
 			 boolean check1 = log.getPassword().equals(pass);
+			 boolean check2 = log.getUsername().equals(username);
 			 
-			 if(check1) {
+			 if(check1 && check2) {
 				 
 				 response.sendRedirect("logincontroller");
+			 }else {
+				 response.getWriter().print("Invalid Password");
+				 request.getRequestDispatcher("Login.html").include(request, response);
 			 }
 			 
 			}else {

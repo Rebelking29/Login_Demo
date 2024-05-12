@@ -17,7 +17,6 @@ function validateLogin() {
   } else {
     document.getElementById("passerror").innerText = "";
     let user = document.getElementById("username").value;
-    // alert("Hey, " + user + " Nice to See You Again :) ");
     return true;
   }
 }
