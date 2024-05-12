@@ -34,7 +34,7 @@ public class LoginController extends HttpServlet {
 			 
 			 if(check1) {
 				 
-				 response.sendRedirect("Welcome.html");
+				 response.sendRedirect("logincontroller");
 			 }
 			 
 			}else {
@@ -42,6 +42,19 @@ public class LoginController extends HttpServlet {
 				request.getRequestDispatcher("Login.html").include(request, response);
 			}
 			
+		}
+	}
+	
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		resp.setContentType("text/html");
+		
+		String action = req.getParameter("action");
+		
+		if(action == null) {
+			resp.sendRedirect("Welcome.html");
 		}
 	}
 

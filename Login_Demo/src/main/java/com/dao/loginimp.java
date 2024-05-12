@@ -8,6 +8,7 @@ import com.pojo.Login;
 import com.util.DBConnection;
 
 public class Loginimp {
+
 	
 	Connection con;
 	PreparedStatement ps;
@@ -42,5 +43,4 @@ public class Loginimp {
 		return log;
 		
 	}
-
 }
